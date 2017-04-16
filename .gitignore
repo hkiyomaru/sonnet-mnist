@@ -27,6 +27,7 @@ env/
 
 # data
 data/
+*.zip
 
 # install
 sonnet/
