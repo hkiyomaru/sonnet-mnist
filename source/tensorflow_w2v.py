@@ -1,4 +1,4 @@
-"""Sonnet implementation of word2vec."""
+"""Tensorflow implementation of word2vec."""
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -12,8 +12,8 @@ import numpy as np
 import tensorflow as tf
 
 # Configuration
-batch_size = 128
-embedding_size = 2
+batch_size = 256
+embedding_size = 128
 num_sampled = 15  # Number of negative examples to sample.
 vocab_size = 30000
 
