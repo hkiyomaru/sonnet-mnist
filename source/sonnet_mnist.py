@@ -19,7 +19,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-# dependency imports
+# Dependency imports
 import sonnet as snt
 import tensorflow as tf
 from tensorflow.contrib.learn.python.learn.datasets.mnist import read_data_sets
@@ -142,17 +142,17 @@ def train(num_training_iterations, report_interval):
     train_y = model(train_x)
     train_loss = dataset_train.cost(train_y, train_y_)
 
-    # Build the validation model and get the validation loss.
+    # Get the validation loss.
     validation_x, validation_y_ = dataset_validation()
     validation_y = model(validation_x)
     validation_loss = dataset_validation.cost(validation_y, validation_y_)
 
-    # Build the test model and get the test loss.
+    # Get the test loss.
     test_x, test_y_ = dataset_test()
     test_y = model(test_x)
     test_loss = dataset_test.cost(test_y, test_y_)
 
-    # Set up optimizer
+    # Set up optimizer.
     train_step = tf.train.AdamOptimizer().minimize(train_loss)
 
     # Train.
