@@ -26,8 +26,7 @@ ENV/
 env/
 
 # data
-data/
-*.zip
+source/MNIST_data/
 
 # install
 sonnet/

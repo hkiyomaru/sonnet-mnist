@@ -1,4 +1,4 @@
-# Sonnet implementation of word2vec
+# Sonnet implementation of MNIST classification
 
 ## Development Environment
 
