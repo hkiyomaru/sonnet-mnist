@@ -2,8 +2,10 @@
 
 ## Development environment
 
-* OS: macOS Sierra 10.12.4
-* Lang: Python 2.7.9
+* macOS: Sierra 10.12.4
+* Python: 2.7.9
+* Sonnet: 1.0
+* TensorFlow: 1.0.1
 
 ## Getting started
 
@@ -22,7 +24,7 @@ Clone the Sonnet source code.
 $ git clone --recursive https://github.com/deepmind/sonnet
 ```
 
-Call `configure`.
+Call `configure` to set up configuration of introducing GPU support and so on.
 
 ```
 $ cd sonnet/tensorflow
@@ -190,7 +192,7 @@ test_loss = dataset_test.cost(test_y, test_y_)
 train_step = tf.train.AdamOptimizer().minimize(train_loss)
 ```
 
-Then, launch a Session to run the training iteration.
+Then, launch a session and run the training iterations on it.
 
 ```python
 with tf.Session() as sess:
